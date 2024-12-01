@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./H&amp;H Therapy website_files/style.css">
+    <title>H&amp;H Therapy website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="section_container nav_cointainer">
+            <div class="nav_logo"> H&H <span> THERAPY</span></div>
+            <ul class="nav_links">
+                <li class="link"><a href="#home">Home</a></li>
+                <li class="link"><a href="#about">About</a></li>
+                <li class="link"><a href="#sevices">Services</a></li>
+            </ul>
+            <button class="btn"><a href="#contact">Contact Us</a></button>
+        </nav>
+       <div class="section_container header_container">
+        <div class="header_content">
+            <h1>Providing an Exeptional Patient Experience</h1>
+            <p>
+                Welcome, where exeptional patient Experiences are our priority.
+                With compassionate care, a safe place for private conversation, 
+                listening ears and pratical advice.
+            </p>
+            <button class="btn">See Services</button>
+        </div>
+       <div class="header_form">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h4>BOOK NOW</h4>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="Address">
+            <input type="text" placeholder="Phone No">
+            <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+            <button class="btn form_btn">Book Appointment</button>
+        </form>
+       </div>
+       </div>
+    </header>
+
+    <section class="section_container service_container">
+        <div class="service_header">
+            <div class="service_header_content">
+                <h2 class="section_header">Our Special Service</h2>
+                <p>
+                    Beyond simply providing a Therapeutic session, our commitment lies in
+                    providing solutions tailored to your unique needs. 
+                </p>
+          
+            <div class="service_grid"></div>
+            <div class="service_card">
+            <span><i class="ri-psychotherapy-line"></i></span>
+            <h4>Psychotherapy</h4><P>
+                Accurate Diagnostics, Swift Results...
+                <span class="read-more-text">
+                </span>
+            </p>
+           <span class="read-more-btn">Read More...</span>
+            
+            <div class="service_card">
+            <span><i class="ri-leaf-line"></i></span>
+            <h4>Herbal Remedy & Solutions</h4>
+            <p>
+                A quick and alternative route with problems solved seamlessly....
+                <span class="read-more-text">
+                </span>
+            </p>
+            <span class="read-more-btn">Read More...</span>
+
+            </div>
+            </div>
+        </div>
+    </div>
+    </div></section>
+    <section class="section_container about_container">
+        <div class="about_content">
+            <h2 class="section_header">About Us</h2>
+            <p>
+                A renowned Sacred Wellness Practitioner, Herbal Wisdom Keeper, and Natural 
+                Remedy Specialist, blending ancient and spiritual practices with modern Therapy
+                as a certified sex therapist and spiritual guide, Specializing in mind-body wellness to
+                improve intimacy, relationships, and ovarall well-being.
+            </p>
+                        
+        </div>
+        <a id="about"></a>
+        <div class="about_image">
+            <img src="H&H AboutUs.png" alt="about">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="section_container footer_container">
+            <div class="footer_col">
+                <h3>Heart 'n Heat <span>THERAPY</span></h3>
+                <p>
+                   "IGNITING THE PASSIONATE FIRE WITHIN YOUR HEART"
+                </p>
+                
+            </div>
+            <div class="footer_col">
+          
+            
+            </div>
+            <a id="home"></a>
+            <div class="footer_col">
+                <h4>Contact Us</h4>
+                <a id="contact"></a>
+                <p>Facebook</p> 
+                <p>Instagram</p>
+                
+            </div>
+            </div>
+        
+    </footer>
+<script src="script.js"></script>
+
+<script>
+function sendEmail(){
+ Email.send({
+    Host : "smtp.gmail.com",
+    Username : "acekick03@gmail.com",
+    Password : "Shallom777",
+    To : 'acekick02@gmail.com',
+    From : documeny.getElementryById("email").value,
+    Subject : "New contact form",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+}
+</script>
+</body>
+</html>
